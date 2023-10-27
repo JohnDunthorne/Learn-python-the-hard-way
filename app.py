@@ -9,6 +9,6 @@ def index():
 #        name = request.args["name"]
 #    else:
 #        name = "world"
-    name = request.args.get("name")
+    name = request.args.get("name", "to you")
         
     return render_template("index.html", name=name)
